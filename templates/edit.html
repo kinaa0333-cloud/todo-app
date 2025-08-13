@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Tugas</title>
+</head>
+<body>
+  <h1>Edit Tugas</h1>
+
+  <form action="/edit/{{ task[0] }}" method="POST">
+    <input type="text" name="content" value="{{ task[1] }}" required>
+    <button type="submit">Simpan</button>
+  </form>
+
+  <p><a href="/">Kembali ke daftar</a></p>
+</body>
+</html>
